@@ -2,18 +2,17 @@
 
 adb_cmd simplify some frequently-used long cmd for Android auto debug and test.
 
-## recommanded usage
+## Recommanded usage
 
 Add the adb_cmd path to your cmd path.
-C:\Users\T440P>echo %path%
-C:\Python27\Scripts;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\PuTTY\;C:\Program Files\Java\jdk1.8.0_241\bin;D:\sdk-tools-windows\platform-tools;D:\sdk-tools-windows\build-tools\31.0.0;D:\sdk-tools-windows\cmdline-tools\6.0\bin;D:\adb_cmd;C:\Python27;D:\sdk-tools-windows\build-tools\29.0.3;C:\Program Files\Git\cmd;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\T440P\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\
 
+## Simplify some frequently-used long cmd
 
-##Simplify some frequently-used long cmd
+### cap
 
-###cap: capture a screen shot connected to adb port.
+capture a screen shot connected to adb port.
+
 C:\Users\T440P>cap
-
 C:\Users\T440P>rem cap.bat
 adbd is already running as root
 Skipping /system for remount
@@ -21,11 +20,12 @@ Skipping /vendor for remount
 Skipping /product for remount
 No partitions to remount
 
-C:\Users\T440P>
 
-###pmlist: list package with the given keyword.
+### pmlist
+
+list package with the given keyword.
+
 D:\adb_cmd>pmlist assist
-
 D:\adb_cmd>rem pmlist.bat
 [06/01/2022 Wed 10:04:01.91] find device 0123456789ABCDEF
 adbd is already running as root
@@ -37,41 +37,41 @@ No partitions to remount
 package:/product/overlay/GmsConfigOverlayAssistantGo.apk=com.google.android.overlay.gmsconfig.assistantgo
 package:/product/priv-app/AssistantGo/AssistantGo.apk=com.google.android.apps.assistant
 
-###bootuplog
+### bootuplog
 
 get logcat if adb online while a system restaring.
 
-###getlog
+### getlog
 
 get logcat log when capture a failure.
 
-###dumptop:
+### dumptop
 
 check and find the top activity.
 
-###autoreboot
+### autoreboot
 
 stress test for reboot device.
 
-###f
+### f
 
 fastboot flash script.
 
-###sign
+### sign
 
 sign apk using signapk.jar 
 
 
-## Some frequently-used element for bat script.
+## Some frequently-used element for bat script
 
-###ensureRoot
+### ensureRoot
 
 check root status for auto script.
 
-###checkDevice
+### checkDevice
 
 check device adb port for auto script.
 
-###envsetup
+### envsetup
 
 set cmd env for auto script.
